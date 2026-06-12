@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
 /* Cooper Typography Specimen Stylesheet */
 
 /* --- Font Face Setup --- */
@@ -37,7 +39,7 @@
 /* --- Theme Variable Definitions --- */
 :root {
   /* Common typography tokens */
-  --font-ui: 'Cooper', Georgia, serif;
+  --font-ui: 'Inter', system-ui, -apple-system, sans-serif;
   --font-serif: 'Cooper', Georgia, serif;
   
   --transition-speed: 0.3s;
@@ -134,6 +136,7 @@ header {
   z-index: 100;
   background: var(--bg);
   transition: all var(--transition-speed) ease;
+  font-family: var(--font-ui);
 }
 
 header .logo {
@@ -1466,6 +1469,7 @@ footer {
   padding: 6rem 6.5% 2.5rem;
   color: var(--text-sec);
   transition: background-color var(--transition-speed) ease, border-color var(--transition-speed) ease;
+  font-family: var(--font-ui);
 }
 
 .footer-row {
