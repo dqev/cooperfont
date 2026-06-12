@@ -260,7 +260,7 @@ main {
   font-weight: 700;
   font-size: clamp(3.5rem, 13vw, 11rem);
   line-height: 0.88;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.03em;
   margin-bottom: 4rem;
 }
 
