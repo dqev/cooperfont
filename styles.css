@@ -2,39 +2,7 @@
 
 /* Cooper Typography Specimen Stylesheet */
 
-/* --- Font Face Setup --- */
-@font-face {
-  font-family: 'Cooper';
-  src: url('cooper-lt-bt/CooperLightBT.woff2') format('woff2'),
-       url('cooper-lt-bt/CooperLightBT.ttf') format('truetype');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Cooper';
-  src: url('cooper-lt-bt/CooperLightItalicBT.ttf') format('truetype');
-  font-weight: 300;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Cooper';
-  src: url('cooper-lt-bt/CooperBoldBT.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Cooper';
-  src: url('cooper-lt-bt/CooperBoldItalicBT.ttf') format('truetype');
-  font-weight: 700;
-  font-style: italic;
-  font-display: swap;
-}
+@import url('fonts.css');
 
 /* --- Theme Variable Definitions --- */
 :root {
@@ -65,6 +33,22 @@
   --blue-bg: #4ba3e3; /* Electric Blue block */
   --blue-text: #111111;
   --blue-border: rgba(17, 17, 17, 0.15);
+
+  --orange-bg: #ff6f43; /* Vibrant Orange block */
+  --orange-text: #111111;
+  --orange-border: rgba(17, 17, 17, 0.15);
+
+  --rose-bg: #ff5b94; /* Vibrant Rose Pink block */
+  --rose-text: #111111;
+  --rose-border: rgba(17, 17, 17, 0.15);
+
+  --teal-bg: #7ae2cf; /* Beautiful Pastel Teal block */
+  --teal-text: #111111;
+  --teal-border: rgba(17, 17, 17, 0.15);
+
+  --purple-bg: #beaaef; /* Light Pastel Purple block */
+  --purple-text: #111111;
+  --purple-border: rgba(17, 17, 17, 0.15);
   
   --accent-color: #ffd13b;
 }
@@ -91,6 +75,22 @@
   --blue-bg: #4ba3e3;
   --blue-text: #111111;
   --blue-border: rgba(17, 17, 17, 0.12);
+
+  --orange-bg: #ff6f43;
+  --orange-text: #111111;
+  --orange-border: rgba(17, 17, 17, 0.12);
+
+  --rose-bg: #ff5b94;
+  --rose-text: #111111;
+  --rose-border: rgba(17, 17, 17, 0.12);
+
+  --teal-bg: #7ae2cf;
+  --teal-text: #111111;
+  --teal-border: rgba(17, 17, 17, 0.12);
+
+  --purple-bg: #e5dbff;
+  --purple-text: #111111;
+  --purple-border: rgba(17, 17, 17, 0.12);
   
   --accent-color: #d35400;
 }
@@ -466,6 +466,7 @@ main {
 .font-56 { font-size: 3.5rem; }
 .font-72 { font-size: 4.5rem; letter-spacing: -0.02em; }
 .font-84 { font-size: 5.25rem; letter-spacing: -0.03em; }
+.font-96 { font-size: 6rem; letter-spacing: -0.035em; }
 
 /* Paragraph specimen columns */
 .text-block-examples {
@@ -1339,8 +1340,169 @@ main {
 .blue-theme .tester-divider {
   width: 0;
   border-left: 1px dashed rgba(17, 17, 17, 0.25);
-  align-self: stretch;
-  background: none;
+}
+
+
+/* --- 5. Weights Showcase Section --- */
+.orange-theme {
+  background-color: var(--orange-bg);
+  color: var(--orange-text);
+}
+
+.weights-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.weight-row {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 2rem;
+  padding: 2.25rem 0;
+  border-bottom: 1px dashed var(--border);
+  align-items: center;
+}
+
+.orange-theme .weight-row {
+  border-bottom-color: var(--orange-border);
+}
+
+.weight-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.weight-num {
+  font-family: var(--font-ui);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: inherit;
+  line-height: 1;
+}
+
+.weight-name {
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  opacity: 0.75;
+}
+
+.weight-previews {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+}
+
+.weight-col {
+  font-family: var(--font-serif);
+  font-size: clamp(1.4rem, 3.2vw, 2.5rem);
+  line-height: 1.15;
+  color: inherit;
+  word-break: break-word;
+}
+
+/* --- 2.5 Teal Accent Section: Specimen Ramp Theme --- */
+.teal-theme {
+  background-color: var(--teal-bg);
+  color: var(--teal-text);
+}
+
+.teal-theme .ramp-container {
+  border-top-color: var(--teal-border);
+}
+
+.teal-theme .ramp-row {
+  border-bottom-color: var(--teal-border);
+}
+
+.teal-theme .ramp-meta {
+  color: inherit;
+  opacity: 0.7;
+}
+
+.teal-theme .column-meta {
+  color: inherit;
+  opacity: 0.7;
+}
+
+
+/* --- 5.5 Developer Integration (Usage) Section --- */
+.purple-theme {
+  background-color: var(--purple-bg);
+  color: var(--purple-text);
+}
+
+.usage-grid-flat {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3.5rem 5rem;
+  margin-top: 3.5rem;
+}
+
+.usage-col {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.usage-col-title {
+  font-family: var(--font-serif);
+  font-size: 1.6rem;
+  font-weight: 700;
+  border-bottom: 1px dashed var(--purple-border);
+  padding-bottom: 0.75rem;
+  margin-bottom: 0.25rem;
+}
+
+.usage-col-text {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  opacity: 0.85;
+}
+
+.usage-code-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.code-label {
+  font-family: var(--font-ui);
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  opacity: 0.7;
+}
+
+.usage-col .code-box {
+  background-color: rgba(17, 17, 17, 0.9);
+  color: #ffffff;
+  border: 1px solid rgba(17, 17, 17, 0.2);
+  margin-top: 0;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.purple-theme .intro-btn {
+  background-color: #111111;
+  color: var(--purple-bg);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 0.65rem 1.25rem;
+  border-radius: 6px;
+  align-self: flex-start;
+  transition: transform 0.15s ease, opacity 0.2s ease, background-color 0.2s ease;
+}
+
+.purple-theme .intro-btn:hover {
+  opacity: 0.95;
+  transform: translateY(-2px);
+  background-color: #222222;
 }
 
 
@@ -1561,6 +1723,23 @@ footer {
 }
 
 @media (max-width: 992px) {
+  /* Weights Showcase Section */
+  .weight-row {
+    grid-template-columns: 100px 1fr;
+    gap: 1.5rem;
+    padding: 1.75rem 0;
+  }
+  
+  .weight-previews {
+    gap: 1.5rem;
+  }
+
+  /* Usage & Integration Section */
+  .usage-grid-flat {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
   /* Header & Navigation */
   header {
     padding: 0.65rem 1.5rem;
@@ -1590,7 +1769,6 @@ footer {
     visibility: hidden;
     transform: translateY(-10px);
     transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s ease;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
     z-index: 99;
     align-items: center;
   }
@@ -1609,7 +1787,7 @@ footer {
   }
 
   nav a::after {
-    display: none; /* Hide hover line underline on mobile */
+    display: none; /* Hide hover line underline on menu */
   }
 
   /* Intro Section */
@@ -1657,6 +1835,7 @@ footer {
   .font-56 { font-size: 2.6rem; }
   .font-72 { font-size: 3.2rem; }
   .font-84 { font-size: 3.8rem; }
+  .font-96 { font-size: 4.2rem; }
 
   /* Anatomy Comparison */
   .accent-header-row {
@@ -1799,6 +1978,27 @@ footer {
 }
 
 @media (max-width: 768px) {
+  /* Weights Showcase Section */
+  .weight-row {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1.5rem 0;
+  }
+  
+  .weight-info {
+    flex-direction: row;
+    align-items: baseline;
+    gap: 0.75rem;
+  }
+  
+  .weight-num {
+    font-size: 1.25rem;
+  }
+  
+  .weight-previews {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
   .specimen-section, .accent-section {
     padding: 3.5rem 1.25rem;
   }
@@ -1861,6 +2061,7 @@ footer {
   .font-56 { font-size: 2.1rem; }
   .font-72 { font-size: 2.5rem; }
   .font-84 { font-size: 2.8rem; }
+  .font-96 { font-size: 3.2rem; }
 
   .matrix-cell {
     font-size: 3.5rem;

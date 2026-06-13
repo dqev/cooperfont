@@ -1,0 +1,274 @@
+/* ==========================================================================
+   Cooper Light BT - CSS Font Face Mapping
+   Optimized: WOFF2 Format Only (Fast, Lightweight CDN Delivery)
+   Organized: Assets grouped in 'fonts/' subdirectory.
+   Maps weights 100 to 900 for both Normal and Italic styles.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Font Family: 'Cooper Lt BT'
+   -------------------------------------------------------------------------- */
+
+/* Normal Styles */
+@font-face {
+  font-family: 'Cooper Lt BT';
+  src: url('./fonts/CooperLtBT-100.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Cooper Lt BT';
+  src: url('./fonts/CooperLtBT-200.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Cooper Lt BT';
+  src: url('./fonts/CooperLtBT-300.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Cooper Lt BT';
+  src: url('./fonts/CooperLtBT-400.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Cooper Lt BT';
+  src: url('./fonts/CooperLtBT-500.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Cooper Lt BT';
+  src: url('./fonts/CooperLtBT-600.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Cooper Lt BT';
+  src: url('./fonts/CooperLtBT-700.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Cooper Lt BT';
+  src: url('./fonts/CooperLtBT-800.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Cooper Lt BT';
+  src: url('./fonts/CooperLtBT-900.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Italic Styles */
+@font-face {
+  font-family: 'Cooper Lt BT';
+  src: url('./fonts/CooperLtBT-100Italic.woff2') format('woff2');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Cooper Lt BT';
+  src: url('./fonts/CooperLtBT-200Italic.woff2') format('woff2');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Cooper Lt BT';
+  src: url('./fonts/CooperLtBT-300Italic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Cooper Lt BT';
+  src: url('./fonts/CooperLtBT-400Italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Cooper Lt BT';
+  src: url('./fonts/CooperLtBT-500Italic.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Cooper Lt BT';
+  src: url('./fonts/CooperLtBT-600Italic.woff2') format('woff2');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Cooper Lt BT';
+  src: url('./fonts/CooperLtBT-700Italic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Cooper Lt BT';
+  src: url('./fonts/CooperLtBT-800Italic.woff2') format('woff2');
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Cooper Lt BT';
+  src: url('./fonts/CooperLtBT-900Italic.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* --------------------------------------------------------------------------
+   Alias Font Family: 'Cooper' (For easier referencing)
+   -------------------------------------------------------------------------- */
+
+/* Normal Styles */
+@font-face {
+  font-family: 'Cooper';
+  src: url('./fonts/CooperLtBT-100.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Cooper';
+  src: url('./fonts/CooperLtBT-200.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Cooper';
+  src: url('./fonts/CooperLtBT-300.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Cooper';
+  src: url('./fonts/CooperLtBT-400.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Cooper';
+  src: url('./fonts/CooperLtBT-500.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Cooper';
+  src: url('./fonts/CooperLtBT-600.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Cooper';
+  src: url('./fonts/CooperLtBT-700.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Cooper';
+  src: url('./fonts/CooperLtBT-800.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Cooper';
+  src: url('./fonts/CooperLtBT-900.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Italic Styles */
+@font-face {
+  font-family: 'Cooper';
+  src: url('./fonts/CooperLtBT-100Italic.woff2') format('woff2');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Cooper';
+  src: url('./fonts/CooperLtBT-200Italic.woff2') format('woff2');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Cooper';
+  src: url('./fonts/CooperLtBT-300Italic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Cooper';
+  src: url('./fonts/CooperLtBT-400Italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Cooper';
+  src: url('./fonts/CooperLtBT-500Italic.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Cooper';
+  src: url('./fonts/CooperLtBT-600Italic.woff2') format('woff2');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Cooper';
+  src: url('./fonts/CooperLtBT-700Italic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Cooper';
+  src: url('./fonts/CooperLtBT-800Italic.woff2') format('woff2');
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Cooper';
+  src: url('./fonts/CooperLtBT-900Italic.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
