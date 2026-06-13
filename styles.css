@@ -376,6 +376,14 @@ main {
   color: var(--text);
   margin-top: 1rem;
   overflow-x: auto;
+  max-width: 100%;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.code-box::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
 }
 
 /* --- 2. Live Testing Playground Bar --- */
@@ -1446,6 +1454,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
+  min-width: 0;
 }
 
 .usage-col-title {
@@ -1764,7 +1773,7 @@ footer {
     border-bottom: 1px solid var(--border);
     flex-direction: column;
     gap: 1.25rem;
-    padding: 1.75rem 1.5rem;
+    padding: 0.75rem 1.5rem 1.25rem;
     opacity: 0;
     visibility: hidden;
     transform: translateY(-10px);
@@ -2096,4 +2105,25 @@ footer {
   footer {
     padding: 3.5rem 1.25rem 2rem;
   }
+}
+
+/* --- Lenis Smooth Scrolling CSS Helpers --- */
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis-scrolling iframe {
+  pointer-events: none;
 }

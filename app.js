@@ -2,6 +2,41 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   
+  // --- Lenis Smooth Scroll Setup ---
+  const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+  const isLowEnd = (navigator.hardwareConcurrency && navigator.hardwareConcurrency < 4) ||
+                    (navigator.deviceMemory && navigator.deviceMemory < 4);
+
+  if (typeof Lenis !== 'undefined' && !isTouchDevice && !isLowEnd) {
+    const lenis = new Lenis({
+      lerp: 0.07, // Frictional interpolation coefficient (lower = floatier, smoother glide)
+      orientation: 'vertical',
+      gestureOrientation: 'vertical',
+      smoothWheel: true,
+      wheelMultiplier: 1.1, // Elegant scroll glide length
+      infinite: false,
+    });
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+
+    // Anchor links smooth scroll integration
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const href = this.getAttribute('href');
+        if (href === '#') return;
+        const target = document.querySelector(href);
+        if (target) {
+          e.preventDefault();
+          lenis.scrollTo(target);
+        }
+      });
+    });
+  }
+
   // --- Theme Toggle System ---
   const themeToggle = document.getElementById('theme-toggler');
   const currentTheme = localStorage.getItem('theme') || 'dark'; // default theme is dark
